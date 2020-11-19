@@ -14,23 +14,23 @@ namespace Gissa_talet
             int talet = slump.Next(1, 101);
             int försök = 0;
             int x = 1;
-            Console.WriteLine("Jag tänker på ett tal mellan 1 och 100. Gissa vilket");
+            Console.WriteLine("Gissa talet mellan 1 och 100");
             while (x == 1)
             {
                 int svar = int.Parse(Console.ReadLine());
                 försök++;
                 if (svar == talet)
                 {
-                    Console.WriteLine("Rätt!");
+                    Console.WriteLine("Rätt");
                     x++;
                 }
                 else if (svar < talet)
                 {
-                    Console.WriteLine("Talet som jag tänker på är större än så. Gissa igen");
+                    Console.WriteLine("Talet är större, gissa igen");
                 }
                 else
                 {
-                    Console.WriteLine("Talet som jag tänker på är mindre än så. Gissa igen");
+                    Console.WriteLine("Talet är mindre, gissa igen");
                 }
             }
             Console.WriteLine("Det tog dig " + försök + " försök att gissa talet.");

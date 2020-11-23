@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
 
 namespace Gissa_talet2
@@ -18,6 +11,7 @@ namespace Gissa_talet2
 
         public Form1()
         {
+            slumptal = slump.Next(1, 101);
             InitializeComponent();
         }
 
@@ -36,13 +30,22 @@ namespace Gissa_talet2
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {            
+        private void Label2_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void Label2_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
+            int tal = int.Parse(textBox1.Text);
+            if (tal == slumptal)
+                label4.Text = "Rätt";
+            else if (tal < slumptal)
+                label4.Text = "Talet är större, gissa igen";
+            else
+                label4.Text = "Talet är mindre, gissa igen";
+            räknare++;
+            label2.Text = räknare.ToString();
 
         }
     }

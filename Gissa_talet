@@ -33,7 +33,7 @@ namespace Gissa_talet
                     Console.WriteLine("Talet är mindre, gissa igen");
                 }
             }
-            Console.WriteLine("Det tog dig " + försök + " försök att gissa talet.");
+            Console.WriteLine("Det tog dig " + försök + " försök att gissa talet");
         }
     }
 }

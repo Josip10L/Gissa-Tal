@@ -52,7 +52,7 @@ namespace Gissa_talet
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 57);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Kolla";
+            this.button1.Text = "Rätta";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -75,7 +75,7 @@ namespace Gissa_talet
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 29);
             this.label2.TabIndex = 3;
-            this.label2.Text = ":";
+            this.label2.Text = "Svar:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
